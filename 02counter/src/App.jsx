@@ -10,16 +10,38 @@ function App() {
 
   // no need to use this -> let counter = 15;
 
-  // creating Aerro function for button click to increase the counter value by one
+
+
+
+ /**
+ * function name: addValue 
+ * des          : creating Aerro function for button click to 
+ *                increase the counter value by one
+ *
+ */
   const addValue = () => {
-    setCounter(counter+1);
-    // console.log("value added", counter);
+    if(counter <= 19){
+      setCounter(counter+1);  // using hooks we are incrementing value of counter
+      // console.log("value added", counter);
+    }
+    
   }
 
-  // creating Aerro function for button click to decrease the counter value by one
+
+
+  
+ /**
+ * function name: remove 
+ * des          : creating Aerro function for button click to 
+ *                decrease the counter value by one
+ *
+ */
   const remove = () => {
-    setCounter(counter-1);
-    // console.log("value removed", counter);
+    if(counter >= 1){
+      setCounter(counter-1);  // using hooks we are decrementing value of counter
+      // console.log("value removed", counter);
+    }
+  
   }
 
   return (
