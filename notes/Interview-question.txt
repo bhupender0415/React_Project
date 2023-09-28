@@ -1,0 +1,86 @@
+Interview question on counter project
+
+1. What is the output of following code
+    -> when button is "Add Value" clicked => 16
+
+function App() {
+   let [counter, setCounter] = useState(15);
+
+  const addValue = () => {
+   
+      setCounter(counter+1);  
+
+    
+  }
+
+  const remove = () => {
+
+      setCounter(counter-1);
+  
+  }
+
+  return (
+    <>
+      <h1>Hello this is counter project</h1>
+      <h2>Counter value: {counter}</h2>        
+      <button onClick = {addValue} >Add Value</button> 
+      <br />
+      <button onClick = {remove}>Remove value</button>
+      
+    </>
+  )
+}
+
+
+Question 2. What is the output of following code
+            -> when button is "Add Value" clicked => 
+
+
+1. What is the output of following code
+    -> when button is "Add Value" clicked => 16
+
+function App() {
+   let [counter, setCounter] = useState(15);
+
+  const addValue = () => {
+   
+      setCounter(counter+1);  
+      setCounter(counter+1); 
+      setCounter(counter+1); 
+      setCounter(counter+1); 
+
+    
+  }
+
+  const remove = () => {
+
+      setCounter(counter-1);
+  
+  }
+
+  return (
+    <>
+      <h1>Hello this is counter project</h1>
+      <h2>Counter value: {counter}</h2>        
+      <button onClick = {addValue} >Add Value</button> 
+      <br />
+      <button onClick = {remove}>Remove value</button>
+      
+    </>
+  )
+}
+
+
+Question 3. if i want to increase the counter value by 4 using above code how can i modify the code
+
+Ans. To do so we can modify this function
+
+  const addValue = () => {
+   
+      setCounter(prevCounter => prevCounter+1);  
+      setCounter(prevCounter => prevCounter+1); 
+      setCounter(prevCounter => prevCounter+1); 
+      setCounter(prevCounter => prevCounter+1); 
+}
+
+Now the Value of counter is increased by 4.
