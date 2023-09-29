@@ -2,7 +2,9 @@
 
 Welcome to the Password Generator project! This React application, built with Vite and styled using Tailwind CSS, allows you to generate secure passwords with various options.
 
-![1695998007164](image/README/1695998007164.png)
+<p>
+    <img src="src/assets/pic.jpg"/>
+</p>
 
 ## Features
 
